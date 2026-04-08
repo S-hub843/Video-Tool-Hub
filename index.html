@@ -18,8 +18,7 @@
   </nav>
 
   <div class="auth">
-    <button class="btn-outline">Sign up</button>
-    <button class="btn-primary">Log in</button>
+    <button class="btn-primary" onclick="openLoginModal()">Log in</button>
   </div>
 </header>
 
@@ -245,7 +244,28 @@
   </div>
 
 </footer>
+<div id="loginModal" class="modal">
 
+  <div class="modal-content">
+
+    <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+
+    <h2>Welcome Back 👋</h2>
+    <p class="modal-sub">Login to continue</p>
+
+    <div class="form-group">
+      <input type="email" placeholder="Email">
+    </div>
+
+    <div class="form-group">
+      <input type="password" placeholder="Password">
+    </div>
+
+    <button class="modal-btn">Login</button>
+
+  </div>
+
+</div>
 <script src="script.js"></script>
 </body>
 </html>
