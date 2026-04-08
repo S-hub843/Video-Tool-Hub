@@ -65,3 +65,33 @@ const statsSection = document.querySelector(".stats");
 if (statsSection) {
   counterObserver.observe(statsSection);
 }
+const input = document.getElementById("fileInput");
+const preview = document.querySelector(".preview-box");
+
+input.addEventListener("change", () => {
+  const file = input.files[0];
+  if (file) {
+    const url = URL.createObjectURL(file);
+    preview.innerHTML = `<video src="${url}" controls width="100%"></video>`;
+  }
+});
+
+const modal = document.getElementById("careerModal");
+const closeBtn = document.querySelector(".close-btn");
+const modalBtn = document.querySelector(".modal-btn");
+
+// OPEN FUNCTION (reuse anywhere)
+function openCareerModal() {
+  modal.style.display = "flex";
+}
+
+// CLOSE
+closeBtn.onclick = () => modal.style.display = "none";
+modalBtn.onclick = () => modal.style.display = "none";
+
+// CLOSE when clicking outside
+window.onclick = (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
