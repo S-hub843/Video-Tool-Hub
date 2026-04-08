@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - VideoTools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* ================= CONTACT ================= */
+.contact {
+  padding: 80px;
+  text-align: center;
+  background: #0b0b0b;
+}
+
+.contact h1 {
+  font-size: 36px;
+}
+
+.subtitle {
+  color: var(--subtext);
+  margin-bottom: 40px;
+}
+
+/* LAYOUT */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* LEFT INFO */
+.contact-info {
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: var(--subtext);
+  margin-bottom: 10px;
+}
+
+/* FORM */
+.contact-form {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 16px;
+}
+
+/* INPUTS */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #111;
+  color: white;
+}
+
+/* BUTTON */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: var(--accent);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+</style>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2 class="logo">VideoTools</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Tools</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="contact">
+
+  <h1>Get in touch</h1>
+  <p class="subtitle">We’d love to hear from you</p>
+
+  <div class="contact-container">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>Email: support@videotools.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Location: Hyderabad, India</p>
+    </div>
+
+    <!-- FORM -->
+    <form class="contact-form">
+
+      <div class="input-group">
+        <input type="text" placeholder="Your Name" required>
+      </div>
+
+      <div class="input-group">
+        <input type="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="input-group">
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>VideoTools</h2>
+      <p>Create, edit and enhance videos with AI.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Product</h4>
+      <a href="#">Editor</a>
+      <a href="#">Converter</a>
+      <a href="#">Compressor</a>
+      <a href="#">AI Tools</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Blog</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 VideoTools. All rights reserved.</p>
+  </div>
+
+</footer>
+
+</body>
+</html>
